@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkipMaster</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🏃 SkipMaster</h1>
+
+    <div class="card">
+        <h2>Today's Skips</h2>
+        <input type="number" id="skips" placeholder="Enter skips">
+        <button onclick="addSkips()">Add Skips</button>
+    </div>
+
+    <div class="card">
+        <h2>Dashboard</h2>
+        <p>Total Skips: <span id="totalSkips">0</span></p>
+        <p>Calories Burned: <span id="calories">0</span></p>
+        <p>Goal Progress: <span id="goalPercent">0</span>%</p>
+    </div>
+
+    <div class="card">
+        <h2>BMI Calculator</h2>
+
+        <input type="number" id="weight" placeholder="Weight (kg)">
+        <input type="number" id="height" placeholder="Height (cm)">
+        <button onclick="calculateBMI()">Calculate BMI</button>
+
+        <p id="bmiResult"></p>
+    </div>
+
+    <div class="card">
+        <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+    </div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
